@@ -127,6 +127,8 @@ brew "zsh-completions"
 brew "hashicorp/tap/nomad"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
 # Free and open-source web browser
