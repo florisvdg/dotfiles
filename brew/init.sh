@@ -5,11 +5,11 @@
 # Install brew
 if ! command -v brew &>/dev/null; then
   bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-  if command -v /opt/homebrew/bin/brew &>/dev/null; then
-    rcadd "$(/opt/homebrew/bin/brew shellenv)"
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-  fi
+if command -v /opt/homebrew/bin/brew &>/dev/null; then
+  rcadd "$(/opt/homebrew/bin/brew shellenv)"
+  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Install everything in Brewfile

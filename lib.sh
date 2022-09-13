@@ -90,7 +90,7 @@ function init {
   info "README.md"
   cat "$topic/README.md"
 
-  ./"$topic"/init.sh
+  $SHELL -c "source "$DOTFILES_OUT_RC" && ./"$topic"/init.sh"
 }
 
 # Get absolute path, replacing $HOME with ~
