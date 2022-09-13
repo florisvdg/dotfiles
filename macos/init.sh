@@ -8,10 +8,16 @@ if ! grep -q "pam_tid.so" "/etc/pam.d/sudo"; then
 fi
 
 # Disable "natural" scroll
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write -g com.apple.swipescrolldirection -bool false
 
 # Enable trackpad tap-to-click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
+# Set keyboard repeat speed
+defaults write -g InitialKeyRepeat -float 35.0
+
+# Set trackpad tracking speed
+defaults write -g com.apple.trackpad.scaling -float 1.5
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
@@ -20,7 +26,7 @@ chflags nohidden ~/Library
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Disable smart quotes
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 
 # Show status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -33,7 +39,7 @@ defaults write com.apple.dock tilesize -int 30
 defaults write com.apple.dock largesize -int 58
 
 # Add global shortcuts
-defaults write 'Apple Global Domain' NSUserKeyEquivalents -dict-add 'System Preferences\U2026' '@$,'
+defaults write -g NSUserKeyEquivalents -dict-add 'System Preferences\U2026' '@$,'
 
 # Add Tower keyboard shortcuts 
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Fetch All Remotes' '@/'
