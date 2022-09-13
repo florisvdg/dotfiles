@@ -60,16 +60,11 @@ function rcadd {
 }
 
 function rcfinal {
-  rcfile="$("$PWD"/scripts/bin/rc-file)"
-  dotfiles_rcfile_path="$(realpath_tilde "$DOTFILES_OUT_RC")"
-  if ! grep -q "$dotfiles_rcfile_path" "$rcfile"; then
-    info "Including Dotfiles rc file in $rcfile"
-    {
-      echo 
-      echo "# Source rc file from Dotfiles"
-      echo "source $dotfiles_rcfile_path"
-    } >> "$rcfile"
-  fi
+  info "Add the following snippet to your ~/.zshrc, ~/.bashrc, or equivalent"
+  echo "# Source rc file from Dotfiles"
+  echo "source $DOTFILES_OUT_RC"
+  echo 
+  echo -n "Press enter when completed" && read -r
 }
 
 # Copy to clipboard, using OS-specific command
