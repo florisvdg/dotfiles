@@ -1,0 +1,2 @@
+#!/bin/bash
+git branch --merged | grep -v -e $(git branch | grep \* | cut -d ' ' -f2) -e develop -e master -e main | xargs git branch -d

@@ -1,0 +1,2 @@
+#!/bin/bash
+du -h "$1" | gsort -h | tail -n 100

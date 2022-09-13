@@ -1,0 +1,9 @@
+#!/bin/bash
+for url in $(cat /dev/stdin); do
+  if [[ "$url" =~ ^http.* ]]; then
+    echo "Downloading from URL $url"
+    curl -o "$(echo $url | sha256sum | awk '{print substr($1, 0, 7)}')-$(basename $url)" "$url"
+  else
+    echo "Skipping, not a URL: $url"
+  fi
+done

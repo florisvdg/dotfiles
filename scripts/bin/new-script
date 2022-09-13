@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+  echo "Usage: $(basename $0) <name>"
+
+  exit 2
+fi
+
+script_name="$1"
+path="$(scripts-dir)/$script_name"
+echo "#!/bin/bash" > "$path"
+chmod +x "$path"
+code -g "$path" "$(dirname "$path")"

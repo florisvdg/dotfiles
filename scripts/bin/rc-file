@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ -f "$HOME/.zshrc" ]; then
+  echo "$HOME/.zshrc"
+  exit 0
+fi
+
+if [ -f "$HOME/.bashrc" ]; then
+  echo "$HOME/.bashrc"
+  exit 0
+fi
+
+exit 1

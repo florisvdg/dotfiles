@@ -1,0 +1,179 @@
+tap "1password/tap"
+tap "hashicorp/tap"
+tap "heroku/brew"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "nektos/tap"
+# Run your GitHub Actions locally 🚀
+brew "act"
+# CLI for Amazon ECS to manage clusters and tasks for development
+brew "amazon-ecs-cli"
+# Official Amazon AWS command-line interface
+brew "awscli"
+# Testing and linting Helm charts
+brew "chart-testing"
+# Enables you to reproduce the CircleCI environment locally
+brew "circleci"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
+# Debugger for the Go programming language
+brew "delve"
+# Simple command-line tool for creating clusters on Amazon EKS
+brew "eksctl"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
+# Easiest way to build and release mobile apps
+brew "fastlane"
+# Core application library for C
+brew "glib"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
+# Distributed revision control system
+brew "git"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
+# Deliver Go binaries as fast and easily as possible
+brew "goreleaser"
+# Open-source build automation tool based on the Groovy and Kotlin DSL
+brew "gradle"
+# Command-line tool for generating regular expressions
+brew "grex"
+# Kubernetes package manager
+brew "helm"
+# Improved top (interactive process viewer)
+brew "htop"
+# Configurable static site generator
+brew "hugo"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Run local Kubernetes cluster in Docker
+brew "kind"
+# Network authentication protocol
+brew "krb5"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Provides library functionality for FIDO U2F & FIDO 2.0, including USB
+brew "libfido2"
+# Java-based project management
+brew "maven"
+# HTTP/2 C Library
+brew "nghttp2"
+# Platform built on V8 to build network applications
+brew "node"
+# Command-line interface (CLI) for mermaid
+brew "mermaid-cli"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf"
+# Intercept, modify, replay, save HTTP/S traffic
+brew "mitmproxy"
+# Cross-platform application and UI framework
+brew "qt"
+# Matroska media files manipulation tools
+brew "mkvtoolnix"
+# OpenBSD freely-licensed SSH connectivity tools
+brew "openssh"
+# Swiss-army knife of markup format conversion
+brew "pandoc"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Object-relational database system
+brew "postgresql"
+# Modern replacement for ps written by Rust
+brew "procs"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
+# Convert character set (charsets)
+brew "recode"
+# Persistent key-value database, with built-in net interface
+brew "redis"
+# Powerful, clean, object-oriented scripting language
+brew "ruby@2.7"
+# Rust toolchain installer
+brew "rustup-init"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Replay saved tcpdump files at arbitrary speeds
+brew "tcpreplay"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Thin wrapper for Terraform e.g. for locking state
+brew "terragrunt"
+# Terminal multiplexer
+brew "tmux"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
+# Command-line client for WebSockets
+brew "websocat"
+# Internet file retriever
+brew "wget"
+# Fast CSV toolkit written in Rust
+brew "xsv"
+# Process YAML documents from the CLI
+brew "yq"
+# Additional completion definitions for zsh
+brew "zsh-completions"
+# Nomad
+brew "hashicorp/tap/nomad"
+# Everything you need to get started with Heroku
+brew "heroku/brew/heroku"
+# Securely stores and accesses AWS credentials in a development environment
+cask "aws-vault"
+# Free and open-source web browser
+cask "chromium"
+# Server and cloud storage browser
+cask "cyberduck"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Draw.io is free online diagram software
+cask "drawio"
+# Web browser
+cask "firefox"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "google-cloud-sdk"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
+# Desktop virtualization software
+cask "parallels"
+# GUI client for PostgreSQL databases
+cask "postico"
+# Modern and intuitive HTTP Debugging Proxy app
+cask "proxyman"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
+# MySQL/MariaDB database management
+cask "sequel-ace"
+# MySQL/MariaDB database management platform
+cask "sequel-pro"
+# Native GUI tool for relational databases
+cask "tableplus"
+# Git client focusing on power and productivity
+cask "tower"
+# File transfer application
+cask "transmit"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+# Desktop client for WhatsApp
+cask "whatsapp"
+# Network protocol analyzer
+cask "wireshark"
+# Video communication and virtual meeting platform
+cask "zoom"
+# Command-line interface for 1Password
+cask "1password/tap/1password-cli"
