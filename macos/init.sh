@@ -23,6 +23,9 @@ defaults write com.apple.dock magnification -bool true
 # Make Dock smaller
 defaults write com.apple.dock tilesize -int 30
 
+# Add global shortcuts
+defaults write 'Apple Global Domain' NSUserKeyEquivalents -dict-add 'System Preferences\U2026' '@$,'
+
 # Add Tower keyboard shortcuts 
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Fetch All Remotes' '@/'
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Open in Terminal' '@e'
