@@ -161,8 +161,6 @@ cask "proxyman"
 cask "rectangle"
 # MySQL/MariaDB database management
 cask "sequel-ace"
-# MySQL/MariaDB database management platform
-cask "sequel-pro"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Git client focusing on power and productivity
