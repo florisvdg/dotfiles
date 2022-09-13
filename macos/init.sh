@@ -4,7 +4,7 @@
 
 if ! grep -q "pam_tid.so" "/etc/pam.d/sudo"; then
   echo "Allow using Touch ID for sudo"
-  sudo sh -c 'echo "auth sufficient pam_tid.so" >> /etc/pam.d/sudo'
+  sudo sh -c 'echo "auth       sufficient     pam_tid.so\n$(cat /etc/pam.d/sudo)" > /etc/pam.d/sudo'
 fi
 
 # Disable "natural" scroll
