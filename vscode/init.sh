@@ -18,8 +18,8 @@ if [ -f "$settings_path" ]; then
 fi
 
 echo "Open VS Code and run the following command palette action to configure settings sync:"
-echo "workbench.userDataSync.actions.configure"
-clipboard "workbench.userDataSync.actions.configure"
+echo "workbench.userDataSync.actions.turnOn"
+clipboard "workbench.userDataSync.actions.turnOn"
 
 echo "Press enter to continue" && read -r
 code -nw
