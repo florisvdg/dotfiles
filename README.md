@@ -15,7 +15,7 @@
 ## Setup
 
 ```shell
-git clone https://github.com/florisvdg/dotfiles.git
-cd dotfiles
-./init.sh
+git clone https://github.com/florisvdg/dotfiles.git \
+ && cd dotfiles \
+ && ./init.sh
 ```
