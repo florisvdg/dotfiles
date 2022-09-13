@@ -2,13 +2,14 @@
 
 ## Components
 
-- [macOS](./macos)
 - [Homebrew](./brew)
+- [macOS](./macos)
 - [Zsh](./zsh)
 - [1Password](./1password)
 - [SSH](./ssh)
 - [Git](./git)
 - [Docker](./docker)
+- [iTerm](./iterm)
 - [VS Code](./vscode)
 - [Util scripts](./scripts)
 
