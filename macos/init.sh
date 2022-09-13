@@ -17,6 +17,12 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Show status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
 
+# Enable Dock magnification effect
+defaults write com.apple.dock magnification -bool true
+
+# Make Dock smaller
+defaults write com.apple.dock tilesize -int 30
+
 rcadd '
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
