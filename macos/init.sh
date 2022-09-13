@@ -27,6 +27,7 @@ defaults write com.apple.dock magnification -bool true
 
 # Make Dock smaller
 defaults write com.apple.dock tilesize -int 30
+defaults write com.apple.dock largesize -int 58
 
 # Add global shortcuts
 defaults write 'Apple Global Domain' NSUserKeyEquivalents -dict-add 'System Preferences\U2026' '@$,'
