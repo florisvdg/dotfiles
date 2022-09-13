@@ -161,6 +161,8 @@ cask "proxyman"
 cask "rectangle"
 # MySQL/MariaDB database management
 cask "sequel-ace"
+# Team communication and collaboration software
+cask "slack"
 # Native GUI tool for relational databases
 cask "tableplus"
 # Git client focusing on power and productivity
