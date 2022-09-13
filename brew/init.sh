@@ -13,4 +13,4 @@ if ! command -v brew &>/dev/null; then
 fi
 
 # Install everything in Brewfile
-brew bundle install --file=./brew/Brewfile
+brew bundle install -v --file=./brew/Brewfile
