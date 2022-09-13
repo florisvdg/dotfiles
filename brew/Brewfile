@@ -145,6 +145,8 @@ cask "drawio"
 cask "firefox"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "google-cloud-sdk"
+# Web browser
+cask "google-chrome"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Reverse proxy, secure introspectable tunnels to localhost
