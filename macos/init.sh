@@ -23,6 +23,14 @@ defaults write com.apple.dock magnification -bool true
 # Make Dock smaller
 defaults write com.apple.dock tilesize -int 30
 
+# Add Tower keyboard shortcuts 
+defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Fetch All Remotes' '@/'
+defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Open in Terminal' '@e'
+defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Actions\U2026' '@k'
+defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Pull' '@\U2193'
+defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Push HEAD' '@\U2191'
+defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Reveal in Finder' '@r'
+
 rcadd '
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

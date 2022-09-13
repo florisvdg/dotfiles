@@ -5,8 +5,8 @@
 create_new_out_dir
 
 if [ -n "$MACOS" ]; then
-  init macos
   init brew
+  init macos
   init zsh
   init 1password
   init ssh
