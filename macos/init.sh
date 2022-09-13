@@ -10,6 +10,9 @@ fi
 # Disable "natural" scroll
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
+# Enable trackpad tap-to-click
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
 # Show the ~/Library folder
 chflags nohidden ~/Library
 
