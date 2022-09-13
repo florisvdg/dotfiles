@@ -12,6 +12,7 @@ if [ -n "$MACOS" ]; then
   init ssh
   init git
   init docker
+  init iterm
   init vscode
   init scripts
   rcfinal
