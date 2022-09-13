@@ -1,10 +1,10 @@
 #!/bin/bash
-if [ -f "$HOME/.zshrc" ]; then
+if [ -f "$HOME/.zshrc" ] || command -v zsh &>/dev/null; then
   echo "$HOME/.zshrc"
   exit 0
 fi
 
-if [ -f "$HOME/.bashrc" ]; then
+if [ -f "$HOME/.bashrc" ] || command -v bash &>/dev/null; then
   echo "$HOME/.bashrc"
   exit 0
 fi
