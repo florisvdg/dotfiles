@@ -31,6 +31,14 @@ defaults write -g NSAutomaticQuoteSubstitutionEnabled -bool false
 # Show status bar in Finder
 defaults write com.apple.finder ShowStatusBar -bool true
 
+# Enable system-wide zoom with ctrl, following the pointer
+sudo defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+sudo defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
+sudo defaults write com.apple.universalaccess closeViewPanningMode -bool false
+sudo defaults write com.apple.universalaccess closeViewPressOnReleaseOff -bool true
+sudo defaults write com.apple.universalaccess closeViewSmoothImages -bool true
+
 # Enable Dock magnification effect
 defaults write com.apple.dock magnification -bool true
 
