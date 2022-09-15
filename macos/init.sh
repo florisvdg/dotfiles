@@ -39,6 +39,10 @@ sudo defaults write com.apple.universalaccess closeViewPanningMode -bool false
 sudo defaults write com.apple.universalaccess closeViewPressOnReleaseOff -bool true
 sudo defaults write com.apple.universalaccess closeViewSmoothImages -bool true
 
+# Configure interactive corner: bottom left => sleep display
+defaults write com.apple.dock wvous-bl-corner -int 10
+defaults write com.apple.dock wvous-bl-modifier -int 0
+
 # Enable Dock magnification effect
 defaults write com.apple.dock magnification -bool true
 
