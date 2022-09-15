@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ $# -ge 1 ] && [ $1 = '.' ]; then
-    /usr/local/bin/gittower "$@"
+    PATH="$(filtered-path "$(scripts-dir)")" gittower "$@"
     git-rm-merged-branches
 else
-    /usr/local/bin/gittower "$@"
+    PATH="$(filtered-path "$(scripts-dir)")" gittower "$@"
 fi

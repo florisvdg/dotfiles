@@ -1,0 +1,3 @@
+#!/bin/bash
+exclude="$1"
+echo -n $PATH | awk -v RS=: -v ORS=: '$0 != "'$exclude'"' | sed 's/:$//'
