@@ -1,5 +1,6 @@
 #!/bin/zsh
 # shellcheck source=/dev/null
+source ~/.zshrc
 rcfile="$(rc-file)"
 $EDITOR "$rcfile"
 source "$rcfile"

@@ -4,7 +4,7 @@
 
 rcadd '
 # VS Code
-export EDITOR="code -w"
+export EDITOR=("code" "-w")
 '
 
 if [ -n "$MACOS" ]; then
