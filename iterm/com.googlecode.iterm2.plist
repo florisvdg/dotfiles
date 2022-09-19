@@ -2490,6 +2490,8 @@
 			<string></string>
 		</dict>
 	</array>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>OpenFileInNewWindows</key>
 	<true/>
 	<key>PerPaneBackgroundImage</key>
