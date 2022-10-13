@@ -1,0 +1,12 @@
+#!/bin/bash
+if [ $# -ne 1 ]; then
+  echo "Usage: $(basename $0) <app_name>"
+  echo
+  echo "Examples:"
+  echo "  $(basename $0) 1Password"
+  echo "  $(basename $0) \"Google Chrome\""
+  exit 2
+fi
+
+app_name="$1"
+osascript -e "id of app \"$app_name\""
