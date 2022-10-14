@@ -61,9 +61,11 @@ defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Pull' '
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Push HEAD' '@\U2191'
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Reveal in Finder' '@r'
 
-# Add Apple Music keyboard shortcuts 
+# Add Apple Music keyboard shortcuts
 defaults write com.apple.Music NSUserKeyEquivalents -dict-add 'Show Filter Field' '@f'
 defaults write com.apple.Music NSUserKeyEquivalents -dict-add 'Hide Filter Field' '@f'
+defaults write com.apple.Music NSUserKeyEquivalents -dict-add 'Toon filterveld' '@f' # 🇳🇱
+defaults write com.apple.Music NSUserKeyEquivalents -dict-add 'Verberg filterveld' '@f' # 🇳🇱
 
 rcadd '
 export LC_ALL=en_US.UTF-8
