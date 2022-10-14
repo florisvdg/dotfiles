@@ -1,5 +1,5 @@
 #!/bin/bash
-# shellcheck source=../lib.sh
+# shellcheck source=../lib.sh disable=SC2016,SC2088
 . lib.sh
 
 if ! grep -q "pam_tid.so" "/etc/pam.d/sudo"; then
@@ -60,6 +60,10 @@ defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Actions
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Pull' '@\U2193'
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Quick Push HEAD' '@\U2191'
 defaults write com.fournova.Tower3 NSUserKeyEquivalents -dict-add 'Reveal in Finder' '@r'
+
+# Add Apple Music keyboard shortcuts 
+defaults write com.apple.Music NSUserKeyEquivalents -dict-add 'Show Filter Field' '@f'
+defaults write com.apple.Music NSUserKeyEquivalents -dict-add 'Hide Filter Field' '@f'
 
 rcadd '
 export LC_ALL=en_US.UTF-8
